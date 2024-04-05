@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="кг">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./game3.style.css">
+    <script src="./game3.js" defer></script>
+    <title>Составить</title>
+</head>
+<body>
+    <div class=" slider-thumb">
+        <section>
+            <div class="random-wrapper">
+                <div class="random-wrapper" id="my_random_wrapper">
+                    Необходимо отгадать загадку и перенести буквы в правильное место.
+                </div>
+                <ul class="quiz-letters"></ul>
+                <div  class="timewatch">
+                    <p id="timer">00:00:01</p>
+                </div>
+                <ul class="random-letters"></ul>
+            </div>
+        </section>
+    </div>
+    <div class="back-wrapper">
+        <input class="btn" type="button" onclick="location.href='../menu.html'" value="Вернуться" />
+    </div>
+</body>
+<script>
+    words_1 = ["дождь", "ягода", "груша", "лимон", "цифра"]
+    riddles_1 =[
+        "С неба льётся, по окнам стучит", 
+        "Красная, сладкая, <br>на кустах растет", 
+        "Висит ..., нельзя скушать", 
+        "Из чего делают лимонад?", 
+        "Число от 0 до 9 <br>на бумаге и в телефоне"
+    ]
+    localStorage.setItem('words', JSON.stringify(words_1));
+    localStorage.setItem('riddles', JSON.stringify(riddles_1));
+    // localStorage.setItem("gameTime", 1500)
+    localStorage.setItem("length", 5)
+    localStorage.setItem("redirect", './game3_3.html')
+</script>
+</html>

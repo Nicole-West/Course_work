@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Main menu</title>
+</head>
+<body>
+    <div class=" slider-thumb">
+        <section>
+            <div class="box">
+                <div class="menu-wrapper">
+                    <h2 id="userNameField"></h2>
+                    <h4 id="resultField"></h4>
+                    <div class="menu-box">
+                        <input class="btn" type="button" onclick="location.href='./games/game1.html'" value="Найти" />
+                        <input class="btn" type="button" onclick="location.href='./games/game2.html'" value="Составить" />
+                        <input class="btn" type="button" onclick="location.href='./games/game3.html'" value="Перенести" />
+                        <input class="btn" type="button" onclick="location.href='./rating.html'" value="Рейтинг" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="back-wrapper">
+        <input class="btn" type="button" onclick="location.href='./index.html'" value="Назад" />
+    </div>
+</body>
+<script>
+    const userNameField = document.getElementById("userNameField")      
+    const userName = localStorage.getItem("userName")
+    userNameField.innerText = `Привет, ${userName}!`
+  
+    const resultField = document.getElementById("resultField")      
+    const result = +localStorage.getItem("result")
+    resultField.innerText = `Твои баллы: ${result}`
+  
+    const currentUser = localStorage.getItem("currentUser")
+    const usersStr = localStorage.getItem("users")
+    const users = JSON.parse(usersStr)
+  
+    users[currentUser] = { userName, result }
+    localStorage.setItem("users", JSON.stringify(users))
+  
+  </script>
+</html>

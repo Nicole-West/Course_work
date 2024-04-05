@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./rating.style.css">
+    <title>Main menu</title>
+</head>
+<body>
+    <section class="absolute">
+        <div class="rating" id="bestUsers">
+        </div>
+    </section>
+    <section>
+        <div class="box">
+            <div class="menu-wrapper">
+                <h2>Топ 10!</h2>
+                <div class="menu-box">
+                    <input class="btn" type="button" onclick="location.href='./menu.html'" value="Вернуться" />
+                </div>
+            </div>
+        </div>
+    </section>
+   
+</body>
+<script>
+     const usersStr = localStorage.getItem("users")
+    const usersData = JSON.parse(usersStr)
+    const users = Object.values(usersData)
+    users.sort((a, b) => b.result - a.result)
+
+    const tableBody = document.getElementById('bestUsers')
+
+    for (let i = 0; i < 10 && i < users.length; i++) {
+       const bestItem = document.createElement('div')
+       bestItem.classList.add("best")
+       tableBody.appendChild(bestItem)
+
+       const userNameCell = document.createElement('span')
+       userNameCell.textContent = users[i].userName
+       bestItem.appendChild(userNameCell)
+
+       const resultCell = document.createElement('span')
+       resultCell.textContent = users[i].result
+       bestItem.appendChild(resultCell)        
+    }
+
+</script>
+</html>

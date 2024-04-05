@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/875cec1d0b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./game2.style.css">
+    <script src="./game2.js" defer></script>
+    <title>Башни</title>
+</head>
+<body>
+    <div class=" slider-thumb">
+        <section>
+            <div id="canves" class="box">
+                <div class="random-wrapper" id="my_random_wrapper">
+                    Правила игры: Необходимо собрать слово из 4 букв, буква поднимается и опускается по нажатию.
+                </div>
+                <h2 id="count">Игра</h2>
+                <div class="towers">
+                    <ul class="tower" id="tower-1"></ul>
+                    <ul class="tower" id="tower-2"></ul>
+                    <ul class="tower" id="tower-3"></ul>
+                    <ul class="tower" id="tower-4"></ul>
+                </div>
+                <div class="towers">
+                    <ul class="tower" id="tower-5"></ul>
+                    <ul class="tower" id="tower-6"></ul>
+                    <ul class="tower" id="tower-7"></ul>
+                    <ul class="tower" id="tower-8"></ul>
+                </div>
+                <div class="restart-wrapper">
+                    <input class="btn" type="button" value="Заново" onclick="initGame()" />
+                </div>
+              </div>
+        </section>
+    </div>
+    <div class="back-wrapper">
+        <input class="btn" type="button" onclick="location.href='../menu.html'" value="Вернуться" />
+    </div>
+</body>
+<script>
+  localStorage.setItem("redirect", '../menu.html')
+</script>
+</html>

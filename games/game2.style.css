@@ -1,0 +1,82 @@
+
+#canves {
+   padding: 24px;
+   display: flex; 
+   flex-direction: column; 
+   justify-content: center; 
+   width: 40%;
+  }
+
+#score-panel {
+  width: 100%;
+  font-size: 23px;
+  text-align: center;
+  padding: 0;
+  color:purple;
+}
+
+#count{
+  margin: 20px;
+}
+
+#my_random_wrapper{
+  text-transform: uppercase;
+  padding: 12px;
+}
+
+#score-panel li {
+  list-style: none;
+  display: inline-block;
+}
+
+.restart-wrapper {
+  padding-top: 64px;
+  width: 60%;
+  max-width: 160px;
+}
+
+  .towers {
+    padding-top: 54px;
+    display: flex; 
+    width: 100%;
+    justify-content: center; 
+  }
+
+  .tower {
+    width: 50px;
+    height: 117px;
+    border-bottom: 5px solid rgb(255, 211, 255);
+    position: relative;
+    text-align: center;
+    padding: 0;
+    margin: 0 25px 0 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    cursor: pointer;
+  }
+  .tower#tower-4 {
+    margin: 0;
+  }
+  .tower#tower-8 {
+    margin: 0;
+  }
+  .disk {
+    position: absolute;
+    list-style: none;
+    height: 16px;
+    color: #ff00bf;
+    bottom: 60px;
+    font-size: 60px;
+    font-weight: 600;
+    z-index: 20;
+  }
+  .disk.hold {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .swal2-overlay {
+    background-color: white;
+  }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./game1.style.css">
+    <script src="./game1.js" defer></script>
+    <title>Найди</title>
+    <style>
+        .rotare{
+            transform: rotate(90deg);
+        }
+        .small{
+            width: 80px;
+        }
+        .big{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class=" slider-thumb">
+        <section>
+            <div class="random-wrapper">
+                <div class="random-wrapper" id="my_random_wrapper">
+                    Правила игры: За отведенное время необходимо найти картинку, <br>соответствующую рандомно выбранному слову. 
+                </div>
+                <div class="template-wrapper">
+                    
+                    <div class="score text-win">
+                        <span id="winFrame">0</span>
+                        <label>хорошо</label>
+                    </div>
+                    
+                    <div class="template_main"></div>
+                    
+                    <div class="score text-lose">
+                        <span id="loseFrame">0</span>
+                        <label>плохо</label>
+                    </div>
+                </div>
+
+                <div  class="timewatch">
+                    <p id="timer">00:00:01</p>
+                </div>
+                
+                <ul id="random-puzzles" class="puzzle-container">
+                </ul>
+
+                <div class="restart-wrapper">
+                    <input class="btn" type="button" value="Заново" onclick="initGame()" />
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="back-wrapper">
+        <input class="btn" type="button" onclick="location.href='../menu.html'" value="Вернуться" />
+    </div>
+</body>
+<script>
+   localStorage.setItem("gameTime", 300)
+    localStorage.setItem("redirect", '../menu.html')
+</script>
+</html>

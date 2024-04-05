@@ -1,0 +1,79 @@
+.random-puzzles {
+    grid-template-columns: repeat(4, minmax(0, 1fr)); 
+    list-style-type: none;
+    user-select: none; 
+  }
+  
+  img{
+    width: 120px;         
+  }
+
+  #my_random_wrapper{
+    margin: 5px 10px;
+    text-transform: uppercase;
+    padding: 21px;
+    gap: 33px;
+  }
+
+  .puzzle-container {
+    list-style: none;
+  }
+  
+  .puzzle-container li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-right: 10px;
+    width: 150px;
+    display: inline-block;
+  }
+
+  .template_main{
+    color: #ff00bf;
+    
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+
+.restart-wrapper {
+  width: 60%;
+  max-width: 160px;
+}
+
+  .template-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 216px;
+    height: 140px;
+    user-select: none;
+  }
+
+  .score span {
+    font-size: 56px;
+    font-weight: 800;
+  }
+
+  .score label {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .text-win {
+    color: #8bc34a;
+  }
+
+  .text-lose {
+    color: crimson;
+  }
+
+  

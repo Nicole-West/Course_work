@@ -1,0 +1,183 @@
+.quiz-letters {
+    display: grid; 
+    grid-template-columns: repeat(5, minmax(0, 1px)); 
+    list-style-type: none;
+    text-transform: uppercase;
+    padding: 1px;
+    margin: 0;
+  }
+  #my_random_wrapper{
+    margin: 5px 10px;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+
+  .quiz-letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #e52e71;
+    opacity: 0.7;
+
+    width: 58px;
+    height: 58px;
+    font-size: 48px;
+    font-weight: 800;
+    padding: 8px;
+    margin: 8px;
+    box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .3);
+ }
+
+ .quiz-letter-done {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(0deg,#e52e71,#ff8a00);
+    width: 58px;
+    height: 58px;
+    font-size: 48px;
+    font-weight: 800;
+    padding: 8px;
+    margin: 8px;
+ }
+
+ .timewatch, .rid {
+    color: #e52e71;
+    width: 300px;
+    font-size: 50px;
+    line-height: 25px; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    word-spacing: 8px;
+    white-space: nowrap;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .timewatch p, .rid {
+    text-align: center; 
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+.riddle, .rid{
+    font-size: 18px;
+    color: black;
+    font-weight: 800;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.random-letters {
+  display: grid; 
+  grid-template-columns: repeat(5, minmax(0, 2fr)); 
+  list-style-type: none;
+  text-transform: uppercase;
+  padding: 21px;
+}
+
+.random-letters li {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+   width: 45px;
+   height: 45px;
+   font-size: 48px;
+   font-weight: 800;
+   padding: 8px;
+   margin: 8px;
+   cursor: grab;
+   filter: brightness(1.2);
+   box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .2);
+}
+
+
+.random-color-0 {
+    color: var(--random-color-0);
+    background-color: var(--random-bg-color-0);
+ }
+.random-color-1 {
+   color: var(--random-color-1);
+   background-color: var(--random-bg-color-1);
+}
+.random-color-2 {
+    color: var(--random-color-2);
+    background-color: var(--random-bg-color-2);
+}
+.random-color-3 {
+    color: var(--random-color-3);
+    background-color: var(--random-bg-color-3);
+}
+.random-color-4 {
+    color: var(--random-color-4);
+    background-color: var(--random-bg-color-4);
+}
+.random-color-5 {
+    color: var(--random-color-5);
+    background-color: var(--random-bg-color-5);
+ }
+ .random-color-6 {
+     color: var(--random-color-6);
+     background-color: var(--random-bg-color-6);
+ }
+ .random-color-7 {
+     color: var(--random-color-7);
+     background-color: var(--random-bg-color-7);
+ }
+ .random-color-8 {
+     color: var(--random-color-8);
+     background-color: var(--random-bg-color-8);
+ }
+ .random-color-9 {
+    color: var(--random-color-9);
+    background-color: var(--random-bg-color-9);
+}
+.random-color-10 {
+    color: var(--random-color-10);
+    background-color: var(--random-bg-color-10);
+}
+.random-color-11 {
+    color: var(--random-color-11);
+    background-color: var(--random-bg-color-11);
+ }
+ .random-color-12 {
+     color: var(--random-color-12);
+     background-color: var(--random-bg-color-12);
+ }
+ .random-color-13 {
+     color: var(--random-color-13);
+     background-color: var(--random-bg-color-13);
+ }
+ .random-color-14 {
+     color: var(--random-color-14);
+     background-color: var(--random-bg-color-14);
+ }
+ .random-color-15 {
+     color: var(--random-color-15);
+     background-color: var(--random-bg-color-15);
+  }
+  .random-color-16 {
+      color: var(--random-color-16);
+      background-color: var(--random-bg-color-16);
+  }
+  .random-color-17 {
+      color: var(--random-color-17);
+      background-color: var(--random-bg-color-17);
+  }
+  .random-color-18 {
+      color: var(--random-color-18);
+      background-color: var(--random-bg-color-18);
+  }
+  
+  .random-color-19 {
+     color: var(--random-color-19);
+     background-color: var(--random-bg-color-19);
+ }
+ .random-color-20 {
+     color: var(--random-color-20);
+     background-color: var(--random-bg-color-20);
+ }
